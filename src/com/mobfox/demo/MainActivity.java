@@ -181,6 +181,7 @@ public class MainActivity extends Activity implements AdListener {
 	private void removeBanner() {
 		if (bannerView != null) {
 			adFrame.removeView(bannerView);
+			bannerView.release();
 			bannerView = null;
 		}
 	}
